@@ -16,24 +16,29 @@ namespace Seminar3
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             int num = new Random().Next(1, 100000);
+            ViewaThirdNumber1(num, 3);
+            
             static void ViewaThirdNumber1(int num, int index)
-        {
-            if (num > 99)
             {
-                int length = (int)Math.Log10(num) + 1;
+                if (num > 99)
+                {
+                    int length = (int)Math.Log10(num) + 1;
 
-                int numberPow = (int)Math.Pow(10, length - index);
+                    int numberPow = (int)Math.Pow(10, length - index);
 
-                int result = num / numberPow % 10;
+                    int result = num / numberPow % 10;
 
-                Console.WriteLine($"{index} цифра в числе {num} -> {result}");
+                    Console.WriteLine($"{index} цифра в числе {num} -> {result}");
+                }
+                else
+                    Console.WriteLine($"У числа нет трёх цифр");
             }
-            else
-                Console.WriteLine($"У числа нет трёх цифр");
-        }
+
+            
         }
     }
 }
