@@ -66,3 +66,20 @@ namespace Seminar2
     }
 
 }
+
+
+//Решение преподавателя
+
+// static void ViewsecondNumber(int num)
+// {
+//     if (num>99 && num<1000)
+//     {
+//         int secondNumber = num / 10 % 10;
+
+//         Console.WriteLine($"Вторая цифра в числе {num} -> {secondNumber}");
+//     }
+//     else
+//         Console.WriteLine($"Число {num} не трехзначное");
+// }
+//     }
+// }
