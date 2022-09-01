@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Seminar2
+namespace Lesson3
 {
     class Program
     {
