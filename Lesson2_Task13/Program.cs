@@ -26,10 +26,12 @@ namespace Seminar3
             {
                 if (num > 99)
                 {
+                    //количество цифр в числе   457384 = 10^5   +1 = 6
                     int length = (int)Math.Log10(num) + 1;
-
+                    //делитель числа. на какое число мы должны поделить, чтобы получить число
+                    //10^(6-3) = 1000
                     int numberPow = (int)Math.Pow(10, length - index);
-
+                    //получаем нашу цифру    457384/1000 = 457   %10 = 7
                     int result = num / numberPow % 10;
 
                     Console.WriteLine($"{index} цифра в числе {num} -> {result}");
