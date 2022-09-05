@@ -44,3 +44,30 @@ namespace Seminar3
         }
     }
 }
+
+
+//  решение преподавателя
+
+ // System.Console.Write("Введите число: ");
+            // num = int.Parse(Console.ReadLine());
+
+            // System.Console.Write("Введите индекс: ");
+            // int numIndex = int.Parse(Console.ReadLine());
+
+            // ViewaThirdNumber1(num, numIndex);
+
+    // static void ViewaThirdNumber1(int num, int index)
+    //     {
+    //         if (num > 99)
+    //         {
+    //            int length = (int)Math.Log10(num);
+
+    //            int numberPow = (int)Math.Pow(10, length - index);
+    //            
+    //            int result = num / numberPow % 10;
+    //            
+    //             Console.WriteLine($"{index} цифра в числе {num} -> {result}");
+    //         }
+    //         else
+    //             Console.WriteLine($"У числа нет трёх цифр");
+    //      }
