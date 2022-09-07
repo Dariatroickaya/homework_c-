@@ -4,14 +4,27 @@
 // 2, 4 -> 16
 
 //  NumberToThePower
-// int result = Math.Pow(numberA, numberB);
+
+
+// Console.WriteLine("введите число A: ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("введите число B: ");
+// int numberB = Convert.ToInt32(Console.ReadLine());
+
+// Function(numberA , numberB);
+
+// void Function(int numberA, int numberB)
+// {
+//     Console.WriteLine($"{numberA} , {numberB} -> {Math.Pow(numberA,numberB)}");
+// }
 
 
 Console.Write("Введите число A: ");
-  int numberA = Convert.ToInt32(Console.ReadLine());
+int numberA = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите число B: ");
-  int numberB = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
 
 int result = NumberToThePower(numberA, numberB);
 Console.WriteLine(result);
