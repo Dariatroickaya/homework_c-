@@ -20,24 +20,6 @@
 // Подставим значение x во второе уравнение и найдем значение y
 // y = k2 * x + b2 = k2 * (b2 - b1) / (k1 - k2) + b2
 
-// Console.Write("Введите b1: ");
-// var b1 = Convert.ToDouble(Console.ReadLine());
-
-// Console.Write("Введите k1: ");
-// var k1 = Convert.ToDouble(Console.ReadLine());
-
-// Console.Write("Введите b2: ");
-// var b2 = Convert.ToDouble(Console.ReadLine());
-
-// Console.Write("Введите k2: ");
-// var k2 = Convert.ToDouble(Console.ReadLine());
- 
-// var x = (b2 - b1) / (k1 - k2);
-// var y = k2 * x + b2;
- 
-// Console.WriteLine($"Точка пересечения: ({x};{y})");
-
-
 Console.Write("Введите b1: ");
 double b1 = Convert.ToDouble(Console.ReadLine());
 
