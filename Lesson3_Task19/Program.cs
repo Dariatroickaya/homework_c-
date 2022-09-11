@@ -70,6 +70,7 @@ namespace Lesson3
 //                  //revert= 45665*10=456650 + 6=456654
 //                 revert = (revert * 10) + (temp % 10); 
 //                 //temp = 45665
+                   //temp = 4566
 //                 //temp = 456
 //                 //temp = 45
 //                 //temp = 4
