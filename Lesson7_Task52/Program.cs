@@ -61,17 +61,17 @@
 
  void Average()
         {
-            int[,] array = new int[4,3] {{1,4,7},{5,9,2},{8,4,2},{8,4,2}};
+            int[,] array = new int[3,4] {{1,4,7,2},{5,9,2,3},{8,4,2,4}};
  
-            for (int i = 0; i < 4; i++) 
+            for (int i = 0; i < 3; i++) 
             {
                 int average = 0;
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 4; j++)
                 {
-                    average += array[j, i];
+                    average += array[i, j];
                     
                 }
-                Console.WriteLine($"Cреднее арифметическое элементов столбца {i + 1} = {(float)average/4}");
+                Console.WriteLine($"Cреднее арифметическое элементов столбца {i + 1} = {(float)average/3}");
                 
             }
         }
