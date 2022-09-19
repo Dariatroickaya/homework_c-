@@ -32,11 +32,15 @@
 
 // Console.Write("Введите количество строк массива: ");
 //  rows = int.Parse(Console.ReadLine());
+
 // Console.Write("Введите количество столбцов массива: ");
 //  columns = int.Parse(Console.ReadLine());
+
 //  array = GetArray(rows, columns, 0, 10);
+
 // PrintArray(array);
-// double[] averageColumns=GetResultArray(array);
+
+// double[] averageColumns = GetResultArray(array);
 // Console.WriteLine($"Среднее арифметическое каждого столбца = {String.Join("; ",averageColumns)}");
 
 
