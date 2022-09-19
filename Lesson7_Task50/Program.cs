@@ -32,7 +32,8 @@ for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
        { 
-        Console.Write(array[i,j] + "\t  ");     // В этом месте мне помогли, я не очень понимаю, что это вообще и зачем
+         Console.Write($"{array[i,j]} ");
+        // Console.Write(array[i,j] + "\t  ");     
        }
     Console.WriteLine();
 }
@@ -51,6 +52,7 @@ if (indexrows > rows || indexcolumns > columns)
 }
 else
 {
-    object find = array.GetValue(indexrows,indexcolumns);  // в этом месте мне тоже помогли. буду ждать вашего решения и обьяснения на семинаре
-    Console.WriteLine(find);
+    //object find = array.GetValue(indexrows,indexcolumns);  // в этом месте мне тоже помогли. буду ждать вашего решения и обьяснения на семинаре
+    //Console.WriteLine(find);
+    Console.WriteLine(array[indexrows,indexcolumns]);
 }
