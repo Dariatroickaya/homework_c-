@@ -7,58 +7,6 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-
-//НЕ МОГУ НАЙТИ ОШИБКУ/ В МАССИВЕ 3 НА 3 РАБОТАЕТ, В 3 НА 4 НЕТ
-
-
-// int[,] array = FillArray(3, 4, 0, 10);
-// PrintArray(array);
-
-// int[,] FillArray(int rows, int columns, int minValue, int maxValue)
-// {
-//     int[,] result = new int[rows, columns];
-//     for (int i = 0; i < rows; i++)
-//     {
-//         for (int j = 0; j < columns; j++)
-//         {
-//             result[i, j] = new Random().Next(minValue, maxValue + 1);
-//         }
-//     }
-//     return result;
-// }
-
-
-// void PrintArray(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             Console.Write($"{array[i, j]} ");
-//         }
-//         Console.WriteLine();
-//     }
-// }
-
-// Console.WriteLine();
-
-// void Average(int[,] array)
-// {
-//             for (int i = 0; i < 3; i++) 
-//             {
-//               int average = 0;
-//               for (int j = 0; j < 4; j++)
-//                 {
-//                   average += array[j, i];
-
-// System.Console.WriteLine(average);
-//                 }
-//                 // Console.WriteLine($"Cреднее арифметическое элементов столбца {i+1} = {(float)average/3}");
-//             }
-// }
-// Average(array);
-
-
  void Average()
         {
             int[,] array = new int[3,4] {{1,4,7,2},{5,9,2,3},{8,4,2,4}};
@@ -76,3 +24,37 @@
             }
         }
     Average();
+
+
+//РЕШЕНИЕ ПРЕПОДАВАТЕЛЯ
+
+// Console.Clear();
+
+// Console.Write("Введите количество строк массива: ");
+//  rows = int.Parse(Console.ReadLine());
+// Console.Write("Введите количество столбцов массива: ");
+//  columns = int.Parse(Console.ReadLine());
+//  array = GetArray(rows, columns, 0, 10);
+// PrintArray(array);
+// double[] averageColumns=GetResultArray(array);
+// Console.WriteLine($"Среднее арифметическое каждого столбца = {String.Join("; ",averageColumns)}");
+
+
+
+
+
+// double[] GetResultArray(int[,] array)
+// {
+//     double[] result = new double[array.GetLength(1)];
+//     for (int i = 0; i < array.GetLength(1); i++)
+//     {
+//         double sum=0;
+//         for (int j = 0; j < array.GetLength(0); j++)
+//         {
+//             sum+=array[j,i];
+//         }
+//         result[i]=Math.Round(sum/array.GetLength(0),2);
+//     }
+//     return result;
+// }
+
