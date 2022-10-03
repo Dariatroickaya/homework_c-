@@ -79,6 +79,5 @@ for (int i = 1; i < array.GetLength(0); i++)
   }
 }
 
-//Console.WriteLine($"\n{minSumrow+1} - строкa с наименьшей суммой ({sumrow}) элементов ");
 Console.WriteLine($"Наименьшая сумма элементов, равная {minsumrow}, находится в строке {row+1}");
 
