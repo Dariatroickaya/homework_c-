@@ -18,7 +18,7 @@ if (m <= 0 || n <= 0)
 else 
 { if (m == n)
     {
-        Console.WriteLine(m);
+        Console.WriteLine($"-> {m+n}");
     }
 
   else 
